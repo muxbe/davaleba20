@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="acess/style.css" />
+  </head>
+  <body>
+    <header>davaleba 20</header>
+    <button class="btn" id="open-reg-form">New User</button>
+    <section>
+      <div class="modal" id="reg-modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3></h3>
+            <button class="btn delete modal-close">X</button>
+          </div>
+          <div class="modal-body">
+            <form class="form" id="reg" action="#" method="#">
+              <input id="user_id" type="hidden" placeholder="" value="" />
+              <div class="input-field">
+                <label for="user_name">Enter User Name</label>
+                <input
+                  type="text"
+                  data-category="user_name"
+                  id="user_name"
+                  placeholder="user name"
+                  required
+                />
+              </div>
+              <div class="input-field">
+                <label for="user_surname">Enter User Surname</label>
+                <input
+                  type="text"
+                  id="user_surname"
+                  placeholder="user surname"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_phone">Enter phone number</label>
+                <input
+                  type="number"
+                  id="user_phone"
+                  placeholder="phone number"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_personal-id">Enter personal id</label>
+                <input
+                  type="number"
+                  id="user_personal-id"
+                  placeholder="personal id"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_email">Enter Email</label>
+                <input
+                  type="email"
+                  id="user_email"
+                  placeholder="email"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_zip-code">Enter zip code</label>
+                <input
+                  type="text"
+                  id="user_zip-code"
+                  placeholder="zip code"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="user_gender">Enter gender</label>
+                <input
+                  type="text"
+                  id="user_gender"
+                  placeholder="gender"
+                  required
+                />
+              </div>
+
+              <div class="input-field">
+                <button class="btn" id="createuserbtn" type="submit">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="users">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
+            <th>Personal Id</th>
+            <th>Email</th>
+            <th>Zip Code</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="listbody">
+          <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>Doe</td>
+            <td>123456789</td>
+            <td>123456789</td>
+            <td>123456789</td>
+            <td>123456789</td>
+            <td>
+              <button class="btn" id="editbtn">edit</button>
+              <button class="btn" id="deletebtn">delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="acess/my.js"></script>
+  </body>
+</html>
